@@ -1076,12 +1076,21 @@ h1, h2, h3 { font-family: var(--font-display); margin: 0; }
 
 @media (max-width: 900px) {
   .about-inner { grid-template-columns: 1fr; text-align: center; }
-  .about-photo { max-width: 420px; width: 100%; margin: 0 auto; }
+  .about-photo { max-width: 420px; width: 100%; margin: 0 auto 8px; }
   .about-tags { justify-content: center; }
   .about-content .eyebrow, .about-content h2 { text-align: center; }
 }
-@media (max-width: 480px) {
-  .about-photo { max-width: 100%; }
+@media (max-width: 640px) {
+  /* Full-bleed: break out of the section's side padding so the photo
+     reads as a proper hero image instead of a shrunken thumbnail. */
+  .about-photo {
+    max-width: none;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw) 24px;
+    aspect-ratio: 4 / 3;
+    border-radius: 0;
+  }
+  .about-photo::before { display: none; }
 }
 
 /* ============================================================
