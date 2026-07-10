@@ -129,7 +129,7 @@ story.append(Paragraph('SKILLS', styles['SectionHead']))
 story.append(HRFlowable(width='100%', thickness=0.5, color=colors.HexColor('#d5d5d5'), spaceAfter=6))
 skills = [
     ("Sales &amp; Leadership", "team leadership (8 SDRs), negotiation and deal closing, pipeline management and forecasting, client acquisition, B2B strategy, contract management"),
-    ("AI &amp; Tools", "AI-driven sales workflows (ChatGPT, Claude, Jasper), AI agents and automation building, HubSpot, Apollo, ZoomInfo, Reply.io, Waalaxy, no-code product building, data visualization"),
+    ("AI &amp; Tools", "AI-driven sales workflows (Claude, Jasper), agentic workflow automation (Zapier, Make, n8n), prompt engineering and LLM orchestration, RAG and internal knowledge tools, Claude API and Claude Code development, HubSpot, Apollo, ZoomInfo, Reply.io, Waalaxy, no-code product building, data visualization"),
     ("International Trade", "Colombian government contracting, trade agreements (Mercosur, EU), US and LATAM market entry, import/export brokering, economic and policy research"),
     ("Languages", "Spanish (Native), English (Fluent, professional)"),
 ]
