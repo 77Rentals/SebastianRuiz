@@ -14,19 +14,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Deploy to DreamHost via SFTP (password auth)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy to DreamHost via SFTP
+        uses: burnett01/rsync-deployments@6.0.0
         with:
-          server: ${{ secrets.DREAMHOST_HOST }}
-          protocol: sftp
-          port: 22
-          username: ${{ secrets.DREAMHOST_USERNAME }}
-          password: ${{ secrets.DREAMHOST_PASSWORD }}
-          server-dir: /sebastianruiz.online/
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/.github/**
+          switches: -avzr --delete --exclude='.git*' --exclude='.github/'
+          path: ./
+          remote_path: /home/${{ secrets.DREAMHOST_USERNAME }}/sebastianruiz.online/
+          remote_host: ${{ secrets.DREAMHOST_HOST }}
+          remote_user: ${{ secrets.DREAMHOST_USERNAME }}
+          remote_key: ${{ secrets.DREAMHOST_SSH_KEY }}
+          remote_key_pass: ${{ secrets.DREAMHOST_SSH_PASSPHRASE }}
 
       - name: Deployment Success
         run: echo "Deployed to sebastianruiz.online successfully"
