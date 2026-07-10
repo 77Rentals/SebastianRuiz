@@ -120,9 +120,9 @@ for title, org, dates, bullets in jobs:
 
 story.append(Paragraph('EDUCATION', styles['SectionHead']))
 story.append(HRFlowable(width='100%', thickness=0.5, color=colors.HexColor('#d5d5d5'), spaceAfter=6))
-story.append(Paragraph('<b>MBA (In Progress)</b>, Indiana Tech, Fort Wayne, Indiana, expected 2025', styles['CVBody']))
+story.append(Paragraph('<b>MBA (On Pause)</b>, Indiana Tech, Fort Wayne, Indiana, expected 2028', styles['CVBody']))
 story.append(Paragraph(
-    '<b>B.S. Entrepreneurship &amp; International Business</b>, Minor in Criminology, '
+    "<b>Bachelor's in Entrepreneurship &amp; International Business</b>, Minor in Criminology, "
     'The University of Tampa, 2019, Honors Graduate', styles['CVBody']))
 
 story.append(Paragraph('SKILLS', styles['SectionHead']))
