@@ -21,6 +21,11 @@
       } catch (e) { /* noop */ }
     });
 
+    document.querySelectorAll('[data-href-en]').forEach(function (el) {
+      var href = el.getAttribute('data-href-' + lang) || el.getAttribute('data-href-en');
+      el.setAttribute('href', href);
+    });
+
     document.querySelectorAll('.lang-option').forEach(function (opt) {
       opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
     });
