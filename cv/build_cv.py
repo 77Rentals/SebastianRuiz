@@ -45,7 +45,7 @@ story.append(Paragraph(
     'Head of Sales | Bilingual (EN/ES) Sales &amp; Business Development Leader | '
     'LATAM | AI-Driven Operations', styles['Headline']))
 story.append(Paragraph(
-    '<link href="https://sebastianruiz.online" color="#a5822f">sebastianruiz.online</link> &nbsp;|&nbsp; '
+    '<link href="https://sebastianruiz.online/" color="#a5822f">https://sebastianruiz.online/</link> &nbsp;|&nbsp; '
     'sebastianrmconsulting@gmail.com &nbsp;|&nbsp; +57 350 205 3147 &nbsp;|&nbsp; '
     'linkedin.com/in/juansruiz11 &nbsp;|&nbsp; Colombia (Remote)', styles['Contact']))
 story.append(HRFlowable(width='100%', thickness=1.2, color=GOLD, spaceAfter=6))
