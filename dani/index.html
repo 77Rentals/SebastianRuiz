@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>El cuento de Dani</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
+<style>
+@font-face{font-family:"Fredoka";src:url(Fredoka.ttf);font-weight:300 700;font-display:swap}
+@font-face{font-family:"Patrick";src:url(PatrickHand.ttf);font-display:swap}
+:root{--teal:#215f63;--teal2:#163f45;--gold:#e3b64f;--cream:#fff8ea;--ink:#3a2b22;--red:#d6453a}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{min-height:100vh;background:linear-gradient(180deg,var(--teal),var(--teal2));color:var(--cream);
+  font-family:"Patrick",system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;padding:28px 16px 40px;text-align:center}
+.kicker{font-family:"Fredoka",sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-size:15px;margin:0}
+h1{font-family:"Fredoka",sans-serif;font-weight:700;font-size:clamp(34px,9vw,52px);line-height:1.05;margin:8px 0 6px}
+.sub{font-size:20px;margin:0 0 20px;color:#f1e6cc}
+.frame{width:min(100%,420px);border:3px solid var(--gold);border-radius:22px;padding:8px;background:rgba(0,0,0,.18);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+video{display:block;width:100%;aspect-ratio:9/16;border-radius:15px;background:#000}
+.hint{font-size:19px;margin:16px 0 0;color:#f1e6cc}
+.btn{display:inline-block;margin-top:18px;padding:13px 26px;border-radius:999px;background:var(--gold);color:var(--ink);
+  font-family:"Fredoka",sans-serif;font-weight:600;font-size:17px;text-decoration:none;border:2px solid var(--ink)}
+.btn:active{transform:translateY(1px)}
+.sign{font-size:22px;margin-top:28px;color:var(--gold)}
+</style>
+</head>
+<body>
+  <p class="kicker">Un cuento de cumpleaños</p>
+  <h1>El cuento de Dani</h1>
+  <p class="sub">y la moto que venció a Bogotá</p>
+  <div class="frame">
+    <video controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="cuento-dani.mp4" type="video/mp4">
+    </video>
+  </div>
+  <p class="hint">Sube el volumen y dale play.</p>
+  <a class="btn" href="cuento-dani.mp4" download="El cuento de Dani.mp4">Guardar el video</a>
+  <p class="sign">Con todo mi amor, Sebas</p>
+</body>
+</html>
